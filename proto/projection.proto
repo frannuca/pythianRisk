@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pythianRisk.projection;
+
+enum ProjectionModel {
+    PROJECTION_MODEL_UNKNOWN = 0;
+    ARIMA = 1;
+    EXPONENTIAL_SMOOTHING = 2;
+    LINEAR_REGRESSION = 3;
+}
+
+message TimeSeriesData {
+    repeated double values = 1;
+}
+
+message ProjectionRequest {
+    TimeSeriesData data = 1;
+    ProjectionModel model = 2;
+}

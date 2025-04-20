@@ -1,1 +1,0 @@
-run the compileprotos.sh in the top folder to generate the protoubuf classes that will end up in this folder.

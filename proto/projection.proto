@@ -17,3 +17,9 @@ message ProjectionRequest {
     TimeSeriesData data = 1;
     ProjectionModel model = 2;
 }
+
+message RegimeBoundary {
+    string factor_name = 1;
+    double lower_limit = 2;
+    double upper_limit = 3;
+}
